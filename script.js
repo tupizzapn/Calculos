@@ -14,7 +14,7 @@ document.getElementById('calcular').addEventListener('click', function() {
   const Hm = Ht - Hb;
   const Ac = Ht * 0.07;
   const Am = At - Ab - Ac;
-  const L = Ht * 0.008;
+  const L = Ht * 0.005;
   const Az = Ht * 0.05;
   const S = Ht * 0.024;
 
