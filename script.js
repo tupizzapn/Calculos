@@ -14,18 +14,19 @@ document.getElementById('calcular').addEventListener('click', function() {
   const Hm = Ht - Hb;
   const Ac = Ht * 0.07;
   const Am = At - Ab - Ac;
-  const L = Ht * 0.005;
+  const L = Ht * 0.008;
   const Az = Ht * 0.05;
   const S = Ht * 0.024;
 
-  document.getElementById('Ht').textContent = Ht.toFixed(2);
-  document.getElementById('Hb').textContent = Hb.toFixed(2);
-  document.getElementById('Hm').textContent = Hm.toFixed(2);
-  document.getElementById('L').textContent = L.toFixed(2);
-  document.getElementById('Ab').textContent = Ab.toFixed(2);
-  document.getElementById('At').textContent = At.toFixed(2);
-  document.getElementById('Am').textContent = Am.toFixed(2);
-  document.getElementById('Az').textContent = Az.toFixed(2);
-  document.getElementById('Ac').textContent = Ac.toFixed(2);
-  document.getElementById('S').textContent = S.toFixed(2);
+  // Redondear todos los resultados a números enteros
+  document.getElementById('Ht').textContent = Math.round(Ht);
+  document.getElementById('Hb').textContent = Math.round(Hb);
+  document.getElementById('Hm').textContent = Math.round(Hm);
+  document.getElementById('L').textContent = Math.round(L);
+  document.getElementById('Ab').textContent = Math.round(Ab);
+  document.getElementById('At').textContent = Math.round(At);
+  document.getElementById('Am').textContent = Math.round(Am);
+  document.getElementById('Az').textContent = Math.round(Az);
+  document.getElementById('Ac').textContent = Math.round(Ac);
+  document.getElementById('S').textContent = Math.round(S);
 });
