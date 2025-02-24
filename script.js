@@ -9,7 +9,7 @@ document.getElementById('calcular').addEventListener('click', function() {
 
   const Hb = B / 1.5;
   const Ab = B - Hb;
-  const Ht = Hb * 9 / 10;
+  const Ht = Hb * 10 / 9;
   const At = Ht * h;
   const Hm = Ht - Hb;
   const Ac = Ht * 0.07;
