@@ -6,17 +6,17 @@ document.getElementById('calcular').addEventListener('click', function() {
     alert("Por favor, ingrese valores válidos.");
     return;
   }
-
-  const Hb = B / 1.5;
-  const Ab = B - Hb;
-  const Ht = Hb * 10 / 9;
-  const At = Ht * h;
-  const Hm = Ht - Hb;
-  const Ac = Ht * 0.02;
-  const Am = At - Ab - Ac;
-  const L = Ht * 0.0025;
-  const Az = Ht * 0.05;
-  const S = Ht * 0.024;
+ 
+  const Hb = B / 1.5;               // Hb Harina de Biga
+  const Ab = B - Hb;               // Agua de Biga
+  const Ht = Hb * 10 / 9;          //Harina total
+  const At = Ht * h;               // Agua total
+  const Hm = Ht - Hb;              // Harina para la Masa
+  const Ac = Ht * 0.02;            // Aceite
+  const Am = At - Ab;         // Agua de Masa
+  const L = Ht * 0.0025;           // Levadura de Masa 
+  const Az = Ht * 0.0;             // Azucar
+  const S = Ht * 0.025;            //Sal
 
   // Redondear todos los resultados a números enteros
   document.getElementById('Ht').textContent = Math.round(Ht);
