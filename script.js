@@ -14,7 +14,7 @@ document.getElementById('calcular').addEventListener('click', function() {
   const Hm = Ht - Hb;              // Harina para la Masa
   const Ac = Ht * 0.02;            // Aceite
   const Am = At - Ab;         // Agua de Masa
-  const L = Ht * 0.0025;           // Levadura de Masa 
+  const L = Ht * 0.00125;           // Levadura de Masa 
   const S = Ht * 0.025;            //Sal
 
   // Redondear todos los resultados a números enteros
