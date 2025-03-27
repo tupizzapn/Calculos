@@ -15,7 +15,6 @@ document.getElementById('calcular').addEventListener('click', function() {
   const Ac = Ht * 0.02;            // Aceite
   const Am = At - Ab;         // Agua de Masa
   const L = Ht * 0.0025;           // Levadura de Masa 
-  const Az = Ht * 0.0;             // Azucar
   const S = Ht * 0.025;            //Sal
 
   // Redondear todos los resultados a números enteros
@@ -26,7 +25,6 @@ document.getElementById('calcular').addEventListener('click', function() {
   document.getElementById('Ab').textContent = Math.round(Ab);
   document.getElementById('At').textContent = Math.round(At);
   document.getElementById('Am').textContent = Math.round(Am);
-  document.getElementById('Az').textContent = Math.round(Az);
   document.getElementById('Ac').textContent = Math.round(Ac);
   document.getElementById('S').textContent = Math.round(S);
 });
